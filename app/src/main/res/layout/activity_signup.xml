@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/layout"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/user_placeholder" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/icon_name"
+            android:hint="@string/hint_fname" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@color/colorBackground" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/icon_name"
+            android:hint="@string/hint_lname" />
+
+    </LinearLayout>
+
+    <EditText
+        style="@style/etSignup"
+        android:drawableStart="@drawable/icon_contact"
+        android:hint="@string/hint_contact_no" />
+
+    <EditText
+        style="@style/etSignup"
+        android:drawableStart="@drawable/icon_name"
+        android:hint="@string/hint_contact_name" />
+
+    <EditText
+        style="@style/etSignup"
+        android:drawableStart="@drawable/icon_email"
+        android:hint="@string/hint_email" />
+
+    <EditText
+        style="@style/etSignup"
+        android:drawableStart="@drawable/icon_password"
+        android:hint="@string/hint_password" />
+
+    <EditText
+        style="@style/etSignup"
+        android:drawableStart="@drawable/icon_password"
+        android:hint="@string/hint_confirm_password" />
+
+    <CheckBox
+        style="@style/etSignup"
+        android:button="@drawable/chck_box"
+        android:text="@string/hint_toc" />
+
+
+    <Button
+        android:id="@+id/btn_Signup"
+        style="@style/ButtonStyle"
+        android:layout_marginEnd="@dimen/marginEnd23dp"
+        android:layout_marginStart="@dimen/marginStart23dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/signup"
+        android:textColor="@color/colorText"
+        android:textSize="16dp" />
+
+</LinearLayout>

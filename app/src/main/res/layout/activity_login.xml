@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout"
+    android:background="@drawable/background_2"
+    android:orientation="vertical">
+
+
+    <ImageView
+        style="@style/imgView"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        style="@style/etLoginscreen"
+        android:drawableStart="@drawable/icon_email"
+        android:hint="@string/hint_email"
+        android:inputType="text" />
+
+    <EditText
+        style="@style/etLoginscreen"
+        android:drawableStart="@drawable/icon_password"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/login"
+        android:textColor="@color/colorText" />
+
+    <TextView
+        android:id="@+id/tv_ForgotPassword"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/forgotpassword"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_Signup"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="90dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/donthaveanaccount"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>
